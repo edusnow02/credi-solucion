@@ -1,0 +1,43 @@
+# Secretos: nunca se suben
+.env
+*.key
+
+# Entorno virtual y cachés de Python
+venv/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# Bases de datos locales y archivos subidos (pueden tener datos personales)
+db.sqlite3
+media/
+respaldos/
+*.dump
+
+# Datos sintéticos generados (se regeneran con un comando; no hace falta subirlos)
+datos_generados/
+
+# Modelos entrenados
+*.joblib
+*.pkl
+
+# Archivos estáticos recolectados por Django
+staticfiles/
+
+# Editor y sistema
+.vscode/
+.idea/
+.DS_Store
+
+# App móvil (Expo / React Native)
+app_clientes/node_modules/
+app_clientes/.expo/
+app_clientes/dist/
+app_clientes/*.jks
+app_clientes/*.p8
+app_clientes/*.p12
+app_clientes/*.keystore
+app_clientes/*.mobileprovision
+app_clientes/google-services.json
+app_clientes/GoogleService-Info.plist

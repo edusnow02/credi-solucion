@@ -1,0 +1,19 @@
+# Dependencias del backend, con versiones fijas (todos instalan exactamente lo mismo).
+# Se instalan con:  pip install -r backend/requirements.txt
+
+Django==5.2.19                      # framework web (5.2 = versión LTS, con soporte hasta 2028)
+djangorestframework==3.18.3         # APIs (api_interna, api_clientes)
+djangorestframework_simplejwt==5.5.1  # tokens JWT para los clientes de la app
+django-q2==1.11.1                   # cola de tareas (usa la base de datos; no necesita Redis)
+cryptography==50.0.2                # cifrado Fernet de datos personales
+python-dotenv==1.2.4                # lee el archivo .env
+dj-database-url==3.1.2              # convierte DATABASE_URL en la configuración de Django
+psycopg[binary]==3.3.9              # conector de PostgreSQL
+pytesseract==0.3.13                 # puente entre Python y el programa Tesseract (OCR)
+Pillow==13.0.0                      # imágenes (preprocesado del OCR, pagaré en PDF)
+gunicorn==27.0.1                    # servidor web para producción (Docker / Render)
+whitenoise==6.12.0                  # sirve los archivos estáticos (CSS, JS del panel)
+
+# Solo para desarrollo y tests
+pytest==9.2.0
+pytest-django==4.14.0

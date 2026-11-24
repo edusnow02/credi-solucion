@@ -1,0 +1,3 @@
+# Dependencias OPCIONALES (no hacen falta para la demo).
+# Solo si se activa el respaldo de visión con Claude (MOTOR_VISION=claude en el .env).
+anthropic==2.13.0

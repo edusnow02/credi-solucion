@@ -1,0 +1,3 @@
+# Dependencias del generador de datos sintéticos (versiones fijas para que todos obtengan lo mismo).
+Pillow==13.0.0   # dibujar las imágenes de documentos
+pytest==9.2.0    # correr los tests
